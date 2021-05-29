@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "My Font";
+    src: url("font/OPTICopperplate.otf");
+}
+.hc { width:200px; left:0; right:0; margin-left:auto; margin-right:auto; } /* 가로 중앙 정렬 */ 
+.vc { height:40px; top: 0; bottom:0; margin-top:auto; margin-bottom:auto; } /* 세로 중앙 정렬 */
+
+body {
+    background-color: #000000;
+    color: #fff;
+    font-family: "My Font", serif;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+h1 {
+    color: #fff;
+    transition: color 0.5s ease-in-out;
+    text-align: center;
+}
+/* display:flex;
+align-items:center;
+justify-content: center; */
+/* margin: 0 auto; */
+/* text-align: center; */
+/* box-shadow: 0 2px 5px rgba(0,0,0,0.26);  */
+
+.clicked {
+    color: #7f8c8d;
+}
+
+.form,  
+.greetings {
+    display: none;
+    text-align: center;
+}
+
+.toDoForm {
+    text-align: center;
+}
+
+.toDoUl {
+    display:flex;
+align-items:center;
+justify-content: center;
+
+}
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.6s linear;
+}
+/* mix-blend-mode: luminosity;  grayscale */
